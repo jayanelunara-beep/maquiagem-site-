@@ -1,0 +1,124 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #fff0f5, #ffe4e1);
+    color: #444;
+    line-height: 1.8;
+    padding: 30px;
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    color: #d63384;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Subtítulo */
+h2 {
+    text-align: center;
+    color: #c2185b;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+/* Parágrafos */
+p {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: rgba(255,255,255,0.7);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    text-align: justify;
+}
+
+/* Imagem */
+img {
+    display: block;
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transition: transform 0.4s ease;
+}
+
+img:hover {
+    transform: scale(1.03);
+}
+
+/* Link */
+a {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 12px 25px;
+    background-color: #d63384;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+a:hover {
+    background-color: #ad1457;
+    transform: translateY(-2px);
+}
+
+/* Listas */
+ol,
+ul {
+    max-width: 700px;
+    margin: 30px auto;
+    background: white;
+    padding: 25px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* Itens da lista */
+li {
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Destaque para títulos das listas */
+ol {
+    border-left: 6px solid #d63384;
+}
+
+ul {
+    border-left: 6px solid #ff69b4;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p,
+    ol,
+    ul {
+        padding: 15px;
+    }
+}
